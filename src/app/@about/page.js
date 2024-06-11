@@ -42,7 +42,7 @@ export default function About() {
             </motion.svg>
           </div>
           <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
-            Hey there! I'm Habibie. I embarked on my web development journey in
+            Hey there! Im Habibie. I embarked on my web development journey in
             2020, right at the onset of the pandemic. With ample time on my
             hands, I delved into web development through Facebook tutorials and
             immersed myself in a plethora of YouTube videos to delve deeper into

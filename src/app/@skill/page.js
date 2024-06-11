@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Skill() {
   return (
     <div className="flex flex-col items-center">
@@ -11,7 +13,7 @@ export default function Skill() {
                 href="/"
                 className="group flex justify-center p-2 rounded-md drop-shadow-xl   text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
               >
-                <img
+                <Image
                   alt="HTML"
                   loading="lazy"
                   width={80}
@@ -32,7 +34,7 @@ export default function Skill() {
                 href="/"
                 className="group flex justify-center p-2 rounded-md drop-shadow-xl   text-white font-semibold hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
               >
-                <img
+                <Image
                   alt="CSS"
                   loading="lazy"
                   width={80}

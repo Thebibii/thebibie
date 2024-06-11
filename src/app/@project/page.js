@@ -88,9 +88,10 @@ export default function Project() {
             </p>
           </div>
 
-          <img
+          <Image
             src="/img/project/masalahgw.png"
             loading="lazy"
+            layout="fill"
             alt="projects vickyadrii"
             className="order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
             style={{ opacity: 1, transform: "none" }}
