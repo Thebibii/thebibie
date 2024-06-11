@@ -1,113 +1,108 @@
-import Image from "next/image";
+"use client";
+import { motion } from "framer-motion";
+import { getData } from "../services/spotify";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  // const [data, setData] = useState(null);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await getData("http://localhost:3000/api/spot");
+  //     setData(response);
+  //   };
+
+  //   fetchData();
+  // }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <section className="flex flex-col py-16 md:py-20 lg:py-32">
+      <div
+        className="relative flex flex-col items-center"
+        style={{ opacity: 1, transform: "none" }}
+      >
+        {/* <motion.svg
+          width="49"
+          height="49"
+          viewBox="0 0 49 49"
+          fill="none"
+          className="absolute right-0 w-12 -top-5 h-w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          animate={{
+            rotate: [0, 360, -180],
+            transition: { duration: 2.5, repeat: Infinity },
+          }}
+        >
+          <g clipPath="url(#clip0_34_271)">
+            <path
+              d="M24.0074 24.0074C29.5126 39.8286 27.4198 47.901 25.0758 47.6379C22.8234 47.2728 20.3716 39.5403 24.0074 24.0074C7.90096 29.6249 -0.0798048 27.4301 0.468522 24.9738C1.02719 22.7111 8.77005 20.4529 24.0074 24.0074C18.7165 8.56305 20.5241 0.602966 22.7454 0.387204C24.9771 0.36505 27.6225 8.08722 24.0074 24.0074C38.494 18.9618 46.4334 20.3822 47.4133 22.3685C48.6074 24.7317 40.9163 27.958 24.0074 24.0074Z"
+              fill="#025A4E"
             />
-          </a>
+          </g>
+          <defs>
+            <clipPath id="clip0_34_271">
+              <rect
+                width="34"
+                height="34"
+                fill="white"
+                transform="translate(22.7247) rotate(41.9417)"
+              />
+            </clipPath>
+          </defs>
+        </motion.svg>
+        <motion.svg
+          width="49"
+          height="49"
+          viewBox="0 0 49 49"
+          fill="none"
+          className="absolute bottom-28 -left-12 w-14 h-w-14 "
+          xmlns="http://www.w3.org/2000/svg"
+          animate={{
+            rotate: [0, 360, -180],
+            transition: { duration: 2.5, repeat: Infinity },
+          }}
+        >
+          <g clipPath="url(#clip0_34_271)">
+            <path
+              d="M24.0074 24.0074C29.5126 39.8286 27.4198 47.901 25.0758 47.6379C22.8234 47.2728 20.3716 39.5403 24.0074 24.0074C7.90096 29.6249 -0.0798048 27.4301 0.468522 24.9738C1.02719 22.7111 8.77005 20.4529 24.0074 24.0074C18.7165 8.56305 20.5241 0.602966 22.7454 0.387204C24.9771 0.36505 27.6225 8.08722 24.0074 24.0074C38.494 18.9618 46.4334 20.3822 47.4133 22.3685C48.6074 24.7317 40.9163 27.958 24.0074 24.0074Z"
+              fill="#025A4E"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_34_271">
+              <rect
+                width="34"
+                height="34"
+                fill="white"
+                transform="translate(22.7247) rotate(41.9417)"
+              />
+            </clipPath>
+          </defs>
+        </motion.svg> */}
+        <div className="flex flex-col items-center space-y-8">
+          <div className="flex flex-col items-center space-y-1">
+            <h2 className="text-4xl font-extrabold leading-none md:tracking-wide text-primary font-glock lg:text-[80px] xl:text-8xl md:text-[58px]">
+              <span>Habìbíe Bayezid</span>
+            </h2>
+
+            <div className="relative">
+              <h1 className="text-transparent md:tracking-wide leading-none font-glock bg-clip-text bg-gradient-to-r from-primary to-[#044b42] xl:text-[105px] lg:text-[86px] md:text-[62px] font-bold text-[39px]">
+                Web Developer
+              </h1>
+              {/* <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                className="absolute right-0 top-2/3 h-8 w-2/3 fill-[#0c4160]"
+                preserveAspectRatio="none"
+              >
+                <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path>
+              </svg> */}
+            </div>
+          </div>
+          <p className="text-xs font-medium leading-5 tracking-wide text-center max-w-52 md:max-w-xl md:text-base lg:text-xl text-foreground font-poppins">
+            I enjoy creating experiences that are fast, accessible, and involve
+            trying new things.
+          </p>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </section>
   );
 }
