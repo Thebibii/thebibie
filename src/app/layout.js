@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${glock.variable} ${poppins.variable} relative overflow-x-hidden lg:px-24 md:px-16 px-7 sm:px-16 xl:px-52 mx-auto bg-[#EDE7DE]`}
+        className={`${glock.variable} ${poppins.variable} relative overflow-x-hidden lg:px-24 md:px-16 px-5 sm:px-16 xl:px-52 mx-auto bg-[#EDE7DE]`}
       >
         <Navbar />
 
