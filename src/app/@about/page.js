@@ -41,13 +41,21 @@ export default function About() {
               </defs>
             </motion.svg>
           </div>
-          <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
-            Hey there! Im Habibie. I embarked on my web development journey in
-            2020, right at the onset of the pandemic. With ample time on my
-            hands, I delved into web development through Facebook tutorials and
-            immersed myself in a plethora of YouTube videos to delve deeper into
-            the realm of backend development.
-          </p>
+          <div className="flex flex-col space-y-3 tracking-wide">
+            <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
+              Hey there! Im Habibie. I embarked on my web development journey in
+              2020, right at the onset of the pandemic. With ample time on my
+              hands, I delved into web development through Facebook tutorials
+              and immersed myself in a plethora of YouTube videos to delve
+              deeper into the realm of backend development.
+            </p>
+            <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
+              There are a lot of things and technologies to learn in frontend
+              development and I am motivated to learn as much as possible. I
+              enjoy learning something new and getting feedback to make myself
+              better and improve.
+            </p>
+          </div>
           <div>
             <button className="px-4 text-xs sm:text-base sm:px-8 py-2 rounded-full transition-all shadow-lg shadow-black/30 ring-2 ring-white/70 bg-[#233D4D] text-white border-[#54f3d8] border-b-[3px] font-poppins font-medium hover:ring-0 hover:shadow-none hover:brightness-110">
               Download CV

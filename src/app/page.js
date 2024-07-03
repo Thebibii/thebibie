@@ -79,9 +79,9 @@ export default function Home() {
         </motion.svg> */}
         <div className="flex flex-col items-center space-y-8">
           <div className="flex flex-col items-center space-y-1">
-            <h2 className="text-[40px] flex flex-col items-center font-extrabold leading-none md:tracking-wide text-primary font-glock lg:text-[80px] xl:text-8xl md:text-[58px]">
+            <h2 className="text-[39.5px] flex flex-col items-center font-extrabold leading-none md:tracking-wide text-primary font-glock lg:text-[80px] xl:text-8xl md:text-[58px]">
               <span>Habìbíe Bayezid</span>
-              <span>Web Developer</span>
+              <span className="tracking-wide">Web Developer</span>
             </h2>
 
             {/* <div className="relative">
@@ -98,7 +98,7 @@ export default function Home() {
               </svg>
             </div> */}
           </div>
-          <p className="text-sm font-medium leading-6 tracking-wide text-center md:max-w-xl md:text-base lg:text-xl text-foreground font-poppins">
+          <p className="px-5 text-sm font-medium leading-6 text-center md:px-0 md:max-w-xl md:text-base lg:text-xl text-foreground font-poppins">
             I enjoy creating experiences that are fast, accessible, and involve
             trying new things.
           </p>
