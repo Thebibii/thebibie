@@ -78,10 +78,10 @@ export default function Project() {
           className="flex lg:justify-center flex-col lg:p-8 p-3 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer md:rounded-xl rounded-lg transition-all duration-150 ease-in hover:bg-cardHover"
         >
           <div className="order-2 mb-3 space-y-4 lg:mb-0 lg:order-1">
-            <h1 className="text-3xl font-semibold text-cardTitle">
+            <h1 className="text-2xl font-semibold md:text-3xl text-cardTitle">
               Masalah Gw
             </h1>
-            <p className="text-sm font-medium text-foreground md:text-base">
+            <p className="text-xs leading-5 text-foreground sm:text-base">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
               doloribus eveniet dicta exercitationem magnam voluptatum deleniti
               numquam ab architecto facilis.
