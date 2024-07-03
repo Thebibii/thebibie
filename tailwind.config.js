@@ -21,6 +21,7 @@ module.exports = {
         primary: "#034C42",
         secondary: "#8FDCC2",
         foreground: "#4C6763",
+        foregroundDark: "#98A0AC",
         card: "#F4EEE6",
         cardHover: "#F5EEE4",
         cardTitle: "#025A4E",

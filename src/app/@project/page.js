@@ -91,12 +91,12 @@ export default function Project() {
           <Image
             src="/img/project/masalahgw.png"
             loading="lazy"
-            layout="fill"
+            width={446}
+            height={300}
             alt="projects vickyadrii"
             className="order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
-            style={{ opacity: 1, transform: "none" }}
           />
-          <div className="flex flex-col gap-2.5 order-3  items-start">
+          <div className="flex flex-col gap-2.5 order-3 items-start">
             <div className="flex items-center gap-1">
               <p className="text-xs md:text-base text-foreground">
                 App Platform •
