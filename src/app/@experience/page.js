@@ -8,9 +8,9 @@ export default function Experience() {
         Experience
       </h2>
 
-      <div className="p-7 md:p-8 font-poppins transition-all duration-500 rounded-[35px] bg-white/50 ring-white ring-1 group shadow-lg shadow-black/30">
+      <div className="p-6 md:p-8 font-poppins transition-all duration-500 rounded-[35px] bg-white/50 ring-white ring-1 group shadow-lg shadow-black/30">
         <div className="flex items-start gap-2 transition-all duration-300 text-primary hover:cursor-pointer w-fit ">
-          <h3 className="flex gap-0.5 md:text-2xl text-xl font-semibold">
+          <h3 className="flex items-center gap-0.5 md:text-2xl text-[19px] font-semibold">
             <span>Telkom Indonesia</span>
             <svg
               stroke="currentColor"
@@ -32,8 +32,8 @@ export default function Experience() {
             Bandung, Indonesia
           </p>
         </div>
-        <div className="mt-2">
-          <p className="text-xs font-medium leading-5 xl:text-lg sm:text-base font-poppins text-foreground">
+        <div className="mt-4">
+          <p className="text-xs leading-5 xl:text-lg sm:text-base font-poppins text-foreground">
             Membangun, styling, dan memelihara situs web Eventeer. Suatu sistem
             manajemen acara untuk komunitas dan perusahaan. Saya bekerja sama
             dengan tim lintas fungsi seperti back-end, devops, UI/UX, dan QA/SA

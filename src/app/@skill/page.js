@@ -4,7 +4,7 @@ export default function Skill() {
   return (
     <section className="py-12">
       <div className="flex flex-col gap-5">
-        <div className="relative md:w-[595px]  w-[325px]">
+        <div className="relative md:w-[595px]  w-fit">
           <h2 className="md:text-[56px] z-50 text-[30px] md:text-left font-glock tracking-wider font-bold text-secondary">
             🎯Specialized Skills
           </h2>
