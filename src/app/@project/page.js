@@ -75,7 +75,7 @@ export default function Project() {
         <a
           href="https://desa.kembalikedesa.id/?code=720701"
           aria-disabled="true"
-          className="flex lg:justify-center flex-col lg:p-8 p-4 py-6 sm:py-0 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer rounded-xl transition-all duration-150 ease-in hover:bg-cardHover"
+          className="flex lg:justify-center flex-col lg:p-8 p-4 py-6 sm:py-8 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer rounded-xl transition-all duration-150 ease-in hover:bg-cardHover"
         >
           <div className="order-2 mb-3 space-y-4 lg:mb-0 lg:order-1">
             <h1 className="text-2xl font-semibold md:text-3xl text-cardTitle">
@@ -91,9 +91,8 @@ export default function Project() {
           <Image
             src="/img/project/masalahgw.png"
             loading="lazy"
-            // width={446}
-            // height={300}
-            layout="responsive"
+            width={550}
+            height={300}
             alt="projects vickyadrii"
             className="self-center order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
           />

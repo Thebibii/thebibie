@@ -8,8 +8,8 @@ export default function Footer() {
           <Spotify />
         </div> */}
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
-          <div className="flex flex-col space-y-8 md:col-span-7">
-            <h1 className="text-4xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-secondary">
+          <div className="flex flex-col space-y-4 lg:space-y-8 md:col-span-7">
+            <h1 className="text-3xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-secondary">
               Can i be contacted?
             </h1>
             <div>
