@@ -2,7 +2,7 @@ import Image from "next/image";
 import Spotify from "../../components/fragments/Spotify";
 export default function Footer() {
   return (
-    <footer className="flex">
+    <footer className="flex" id="contact">
       <div className="flex flex-col">
         {/* <div className="p-4 rounded-full bg-white/50 min-w-96 ">
           <Spotify />

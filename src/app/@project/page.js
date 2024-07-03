@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Project() {
   return (
-    <div className="flex flex-col items-center w-full py-12">
+    <section id="project" className="flex flex-col items-center w-full py-12">
       <h2 className="text-4xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
         My Projects
       </h2>
@@ -106,6 +106,6 @@ export default function Project() {
           </div>
         </a>
       </div>
-    </div>
+    </section>
   );
 }

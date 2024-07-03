@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
-    <article
-      id="experience-section"
+    <section
+      id="experience"
       className="flex flex-col justify-center py-12 space-y-3 text-black "
     >
       <h2 className="text-4xl font-bold tracking-wide sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
@@ -43,6 +43,6 @@ export default function Experience() {
           </p>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
