@@ -2,17 +2,17 @@ import Image from "next/image";
 import Spotify from "../../components/fragments/Spotify";
 export default function Footer() {
   return (
-    <footer className="flex" id="contact">
+    <footer className="pt-6" id="contact">
       <div className="flex flex-col">
         {/* <div className="p-4 rounded-full bg-white/50 min-w-96 ">
           <Spotify />
         </div> */}
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
           <div className="flex flex-col space-y-4 lg:space-y-8 md:col-span-7">
-            <h1 className="text-3xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-secondary">
+            <h1 className="md:text-[56px]  text-[28px] font-bold tracking-wide w-fit  font-glock text-secondary">
               Can i be contacted?
             </h1>
-            <div>
+            <div className="font-poppins">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2 group">
                   <svg
@@ -27,8 +27,8 @@ export default function Footer() {
                   >
                     <path d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z" />
                   </svg>
-                  <p className="transition-all text-slate-400 group-hover:text-amber-400 font-inter">
-                    Bandar Lampung, Lampung, Indonesia
+                  <p className="text-sm transition-all sm:text-base text-slate-400 group-hover:text-amber-400 font-inter">
+                    Lintau, Sumatera Barat, Indonesia
                   </p>
                 </div>
                 <div className="flex items-center gap-2 group">
@@ -45,10 +45,10 @@ export default function Footer() {
                     <path d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56zm-14.18 92.63-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26z" />
                   </svg>
                   <a
-                    className="transition-all text-slate-400 group-hover:text-amber-400 font-inter"
-                    href="mailto:dedekurnn@outlook.com"
+                    className="text-sm transition-all sm:text-base text-slate-400 group-hover:text-amber-400 font-inter"
+                    href="mailto:habibiesanji@gmail.com"
                   >
-                    dedekurnn@outlook.com
+                    habibiesanji@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-2 group">
@@ -69,30 +69,30 @@ export default function Footer() {
                   </svg>
                   <a
                     target="_blank"
-                    className="transition-all text-slate-400 group-hover:text-amber-400 font-inter"
+                    className="text-sm transition-all sm:text-base text-slate-400 group-hover:text-amber-400 font-inter"
                     href="https://wa.me/6282291119544"
                   >
-                    +62 822 9111 9544
+                    +62895341975182
                   </a>
                 </div>
               </div>
               <div className="mt-12">
-                <p className="text-base lg:text-xl font-drukwide text-slate-200">
+                <p className="text-sm sm:text-base lg:text-xl font-drukwide text-slate-200">
                   Terima kasih telah mengunjungi situs web saya. Saya harap anda
                   senang 😄
                 </p>
-                <p className="mt-8 text-sm font-inter text-slate-400">
-                  Credit: Font used Druk Wide Web by Berton Hasebe and Inter
+                <p className="mt-8 text-xs sm:text-base font-inter text-slate-400">
+                  Credit: Font used Glocks and Poppins Web by Sean Halpin
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-2 mt-8">
-          <p className="text-sm font-inter text-slate-400">
-            Copyright © 2024 - DedeKurnn
+        <div className="flex items-center gap-2 mt-8 ">
+          <p className="text-xs sm:text-base font-poppins text-foregroundDark">
+            Copyright © 2024 - Habibie Bayezid Wildan
           </p>
-          <div className="h-[1px] flex-grow bg-slate-400" />
+          <div className="h-[1px] flex-grow bg-foregroundDark" />
         </div>
       </div>
     </footer>

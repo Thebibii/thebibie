@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skill() {
   return (
-    <section className="py-12" id="skill">
+    <section className="py-6" id="skill">
       <div className="flex flex-col gap-5">
         <div className="relative md:w-[595px] w-fit ">
           <h2 className="md:text-[56px]  z-50 text-[28px] md:text-left font-glock tracking-wide font-bold text-secondary">
