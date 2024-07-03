@@ -75,7 +75,7 @@ export default function Project() {
         <a
           href="https://desa.kembalikedesa.id/?code=720701"
           aria-disabled="true"
-          className="flex lg:justify-center flex-col lg:p-8 p-3 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer md:rounded-xl rounded-lg transition-all duration-150 ease-in hover:bg-cardHover"
+          className="flex lg:justify-center flex-col lg:p-8 p-4 py-6 sm:py-0 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer rounded-xl transition-all duration-150 ease-in hover:bg-cardHover"
         >
           <div className="order-2 mb-3 space-y-4 lg:mb-0 lg:order-1">
             <h1 className="text-2xl font-semibold md:text-3xl text-cardTitle">
