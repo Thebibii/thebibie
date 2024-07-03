@@ -91,10 +91,11 @@ export default function Project() {
           <Image
             src="/img/project/masalahgw.png"
             loading="lazy"
-            width={446}
-            height={300}
+            // width={446}
+            // height={300}
+            layout="responsive"
             alt="projects vickyadrii"
-            className="order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
+            className="self-center order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
           />
           <div className="flex flex-col gap-2.5 order-3 items-start">
             <div className="flex items-center gap-1">
