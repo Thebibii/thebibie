@@ -8,16 +8,16 @@ export default function Experience() {
         Experience
       </h2>
 
-      <div className="p-8 font-poppins transition-all duration-500 rounded-[35px] bg-white/50 ring-white ring-1 group shadow-lg shadow-black/30">
+      <div className="p-7 md:p-8 font-poppins transition-all duration-500 rounded-[35px] bg-white/50 ring-white ring-1 group shadow-lg shadow-black/30">
         <div className="flex items-start gap-2 transition-all duration-300 text-primary hover:cursor-pointer w-fit ">
-          <h3 className="flex gap-0.5 text-2xl font-semibold">
+          <h3 className="flex gap-0.5 md:text-2xl text-xl font-semibold">
             <span>Telkom Indonesia</span>
             <svg
               stroke="currentColor"
               fill="currentColor"
               strokeWidth={0}
               viewBox="0 0 24 24"
-              className="w-8 h-8 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              className="transition-transform duration-300 w-7 h-7 md:w-8 md:h-8 group-hover:translate-x-1 group-hover:-translate-y-1"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,13 +27,13 @@ export default function Experience() {
           </h3>
         </div>
         <div className="gap-4 mt-2 transition-all duration-300 group-hover:text-primary">
-          <p className="font-medium text-foreground">
+          <p className="text-sm font-medium text-foreground md:text-base">
             <span className="mr-2">2024</span> Front End Developer Intern -
             Bandung, Indonesia
           </p>
         </div>
-        <div className="mt-4 text-sm font-medium text-foreground md:text-base ">
-          <p>
+        <div className="mt-2">
+          <p className="text-xs font-medium leading-5 xl:text-lg sm:text-base font-poppins text-foreground">
             Membangun, styling, dan memelihara situs web Eventeer. Suatu sistem
             manajemen acara untuk komunitas dan perusahaan. Saya bekerja sama
             dengan tim lintas fungsi seperti back-end, devops, UI/UX, dan QA/SA
