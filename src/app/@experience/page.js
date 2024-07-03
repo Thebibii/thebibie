@@ -27,13 +27,13 @@ export default function Experience() {
           </h3>
         </div>
         <div className="gap-4 mt-2 transition-all duration-300 group-hover:text-primary">
-          <p className="text-sm font-medium text-foreground md:text-base">
+          <p className="text-sm font-medium text-foreground md:text-lg">
             <span className="mr-2">2024</span> Front End Developer Intern -
             Bandung, Indonesia
           </p>
         </div>
-        <div className="mt-4">
-          <p className="text-xs leading-5 xl:text-lg sm:text-base font-poppins text-foreground">
+        <div className="mt-4 ">
+          <p className="text-xs leading-10 sm:text-base font-poppins text-foreground">
             Membangun, styling, dan memelihara situs web Eventeer. Suatu sistem
             manajemen acara untuk komunitas dan perusahaan. Saya bekerja sama
             dengan tim lintas fungsi seperti back-end, devops, UI/UX, dan QA/SA

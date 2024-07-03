@@ -4,7 +4,7 @@ export default function Project() {
   return (
     <div className="flex flex-col items-center w-full py-12">
       <h2 className="text-4xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
-        Project
+        My Projects
       </h2>
 
       {/* <div className="flex flex-col gap-4 overflow-hidden text-sm transition-all duration-500 rounded-lg bg-card lg:w-2/3 lg:flex-row font-inter group text-slate-400 hover:bg-slate-950 hover:shadow-md hover:bg-opacity-50">
@@ -75,7 +75,7 @@ export default function Project() {
         <a
           href="https://desa.kembalikedesa.id/?code=720701"
           aria-disabled="true"
-          className="flex lg:justify-center flex-col lg:p-8 sm:p-6  lg:space-y-8 font-poppins sm:bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer md:rounded-xl rounded-lg transition-all duration-150 ease-in hover:bg-cardHover"
+          className="flex lg:justify-center flex-col lg:p-8 p-3 sm:p-6  lg:space-y-8 font-poppins bg-card  drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer md:rounded-xl rounded-lg transition-all duration-150 ease-in hover:bg-cardHover"
         >
           <div className="order-2 mb-3 space-y-4 lg:mb-0 lg:order-1">
             <h1 className="text-3xl font-semibold text-cardTitle">
