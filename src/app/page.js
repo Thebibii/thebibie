@@ -9,7 +9,7 @@ import Footer from "../components/pages/Footer";
 
 async function getData() {
   const res = await fetch("https://thebibie.vercel.app/api/data", {
-    cache: "no-cache",
+    cache: "force-cache",
   });
   const data = await res.json();
   return data;
