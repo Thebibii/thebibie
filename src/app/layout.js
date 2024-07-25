@@ -22,14 +22,7 @@ const glock = localFont({
   variable: "--font-glock",
 });
 
-export default function RootLayout({
-  children,
-  about,
-  footer,
-  experience,
-  project,
-  skill,
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
@@ -39,13 +32,6 @@ export default function RootLayout({
 
         <main className="flex flex-col items-center justify-between min-h-screen ">
           {children}
-          {about}
-          {experience}
-          {project}
-          <div className="bg-[#233831] w-screen lg:px-28 md:px-16 p-6 xl:px-52">
-            {skill}
-            {footer}
-          </div>
         </main>
         <BackToTop />
         <div className="fixed top-0 left-0 h-screen w-screen -z-50 opacity-[.025] bg-blend-overlay bg-[url('/grid_pattern.svg')]"></div>

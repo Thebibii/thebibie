@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spotify from "../../components/fragments/Spotify";
+import Spotify from "../../fragments/Spotify";
 export default function Footer() {
   return (
     <footer className="pt-6" id="contact">

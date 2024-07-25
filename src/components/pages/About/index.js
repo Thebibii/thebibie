@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function About() {
+export default function About({ data }) {
   return (
     <section className="flex w-full py-12" id="about">
       <div className="grid grid-cols-1 place-items-center md:grid-cols-12 gap-y-16 lg:gap-y-0">
         <div className="flex flex-col order-2 w-full space-y-3 md:order-1 md:space-y-4 md:col-span-7">
           <div className="relative w-fit">
             <h2 className="text-4xl font-bold tracking-wide sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
-              About Me
+              {data.title}
             </h2>
             <motion.svg
               width="49"
@@ -43,17 +43,10 @@ export default function About() {
           </div>
           <div className="flex flex-col space-y-3 tracking-wide">
             <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
-              Hey there! Im Habibie. I embarked on my web development journey in
-              2020, right at the onset of the pandemic. With ample time on my
-              hands, I delved into web development through Facebook tutorials
-              and immersed myself in a plethora of YouTube videos to delve
-              deeper into the realm of backend development.
+              {data.paragrafOne}
             </p>
             <p className="text-xs font-medium leading-7 xl:text-lg sm:text-base font-poppins text-foreground">
-              There are a lot of things and technologies to learn in frontend
-              development and I am motivated to learn as much as possible. I
-              enjoy learning something new and getting feedback to make myself
-              better and improve.
+              {data.paragrafTwo}
             </p>
           </div>
           <div>
@@ -67,9 +60,11 @@ export default function About() {
           <div className="relative  min-w-fit min-h-[480px]  lg:min-w-[250px] md:min-w-[210px]  md:min-h-[350px] xl:min-w-[300px] xl:h-[400px] overflow-hidden border-2 border-white rounded-ss-[96px] rounded-se-[96px]  md:rounded-ss-full md:rounded-se-full grid justify-items-center md:items-end">
             <Image
               src="/habibie.jpg"
-              layout="fill"
+              fill
               alt="Picture of the author"
-              className="object-cover w-full h-full bg-center"
+              sizes="(100%, 100%)"
+              priority={true}
+              className="object-cover bg-center"
             />
           </div>
         </div>
