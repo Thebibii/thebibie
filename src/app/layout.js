@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
+        id="home"
         className={`${glock.variable} ${poppins.variable} relative overflow-x-hidden lg:px-24 md:px-16 px-6 sm:px-16 xl:px-52 mx-auto bg-[#EDE7DE]`}
       >
         <Navbar />

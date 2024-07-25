@@ -1,4 +1,3 @@
-import { time } from "console";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -37,6 +36,29 @@ export async function GET() {
           link: "https://smkn2-padangpanjang.sch.id",
           description:
             "I have experience as a freelancer for SMKN 2 Padang Panjang, where I developed the bell application and collaborated with the school's Teaching Factory. This application is designed to make it easier to manage and use the school bell system digitally. Apart from that, I also created a web application for the election of the student council president at the same school. In this project, I designed an intuitive user interface and implemented features that support an efficient and transparent selection process. This second project gave me valuable experience in application development and collaboration with educational institutions.",
+        },
+      ],
+    },
+    project: {
+      title: "My Projects",
+      data: [
+        {
+          id: 1,
+          title: "Masalah Gw",
+          link: "https://masalahgw.vercel.app",
+          img: "/img/project/masalahgw.png",
+          description:
+            "An informal forum designed as a place for you all to hang out. Here, informal language creates a relaxed and comfortable atmosphere, allowing us and our users to feel freer to share, discuss and socialize.",
+          build: "",
+        },
+        {
+          id: 2,
+          title: "Bell",
+          link: "null",
+          img: "/img/project/masalahgw.png",
+          description:
+            "Enjoy the convenience of managing time with the automatic bell application. Set bell schedules for schools, factories or offices easily and quickly. Make sure the bell rings on time, without hassle and efficiently.",
+          build: "",
         },
       ],
     },
