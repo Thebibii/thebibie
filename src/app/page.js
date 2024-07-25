@@ -6,16 +6,16 @@ import Project from "../components/pages/Project";
 import Skill from "../components/pages/Skill";
 import Footer from "../components/pages/Footer";
 
-// async function getData() {
-//   const res = await fetch("https://thebibie.vercel.app/api/data", {
-//     cache: "no-cache",
-//   });
-//   const data = await res.json();
-//   return data;
-// }
+async function getData() {
+  const res = await fetch("https://thebibie.vercel.app/api/data", {
+    cache: "no-cache",
+  });
+  const data = await res.json();
+  return data;
+}
 
 export default async function App() {
-  // const data = await getData();
+  const data = await getData();
   return (
     <Fragment>
       {/* <Home data={data.home} />
