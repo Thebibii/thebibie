@@ -21,7 +21,7 @@ export default async function App() {
       <Home data={data.home} />
       <About data={data.about} />
       <Experience data={data.experience} />
-      {/* <Project data={data.project} /> */}
+      <Project data={data.project} />
       <div className="bg-[#233831] w-screen lg:px-28 md:px-16 p-6 xl:px-52">
         <Skill />
         <Footer />
