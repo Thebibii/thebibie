@@ -1,3 +1,4 @@
+"use server";
 import { Fragment } from "react";
 import Home from "../components/pages/Home";
 import About from "../components/pages/About";
