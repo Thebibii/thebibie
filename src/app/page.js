@@ -8,7 +8,7 @@ import Skill from "../components/pages/Skill";
 import Footer from "../components/pages/Footer";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/data", {
+  const res = await fetch("https://thebibie.vercel.app/api/data", {
     cache: "force-cache",
   });
   const data = await res.json();
