@@ -40,7 +40,7 @@ export async function GET() {
       ],
     },
     project: {
-      title: "My Projects",
+      title: "My Projectss",
       data: [
         {
           id: 1,
