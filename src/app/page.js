@@ -7,7 +7,6 @@ import Project from "../components/pages/Project";
 import Skill from "../components/pages/Skill";
 import Footer from "../components/pages/Footer";
 
-const env = process.env.SERVER_URL;
 async function getData() {
   const res = await fetch("https://thebibie.vercel.app/api/data", {
     cache: "no-cache",
