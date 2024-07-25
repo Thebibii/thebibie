@@ -8,7 +8,7 @@ import Footer from "../components/pages/Footer";
 
 async function getData() {
   const res = await fetch("http://localhost:3000/api/data", {
-    cache: "no-store",
+    cache: "force-cache",
   });
   const data = await res.json();
   return data;
