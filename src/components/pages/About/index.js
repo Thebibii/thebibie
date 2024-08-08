@@ -59,7 +59,7 @@ export default function About({ data }) {
         <div className="order-1 w-full md:w-fit md:order-2 md:ml-auto md:col-span-5">
           <div className="relative  min-w-fit min-h-[480px]  lg:min-w-[250px] md:min-w-[210px]  md:min-h-[350px] xl:min-w-[300px] xl:h-[400px] overflow-hidden border-2 border-white rounded-ss-[96px] rounded-se-[96px]  md:rounded-ss-full md:rounded-se-full grid justify-items-center md:items-end">
             <Image
-              src="/habibie.jpg"
+              src="/img/habibie.png"
               fill
               alt="Picture of the author"
               sizes="(100%, 100%)"
