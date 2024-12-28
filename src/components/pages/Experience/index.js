@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Experience({ data }) {
@@ -21,18 +22,7 @@ export default function Experience({ data }) {
                 className="flex items-center gap-0.5 md:text-2xl text-[19px] font-semibold"
               >
                 <span>{data.work}</span>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth={0}
-                  viewBox="0 0 24 24"
-                  className="transition-transform duration-300 w-7 h-7 md:w-8 md:h-8 group-hover:translate-x-1 group-hover:-translate-y-1"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" />
-                </svg>
+                <ArrowUpRight className="transition-transform duration-300 w-7 h-7 md:w-8 md:h-8 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </Link>
             </div>
             <div className="gap-4 mt-2 transition-all duration-300 group-hover:text-primary">

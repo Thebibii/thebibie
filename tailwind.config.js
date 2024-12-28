@@ -26,6 +26,9 @@ module.exports = {
         cardHover: "#F5EEE4",
         cardTitle: "#025A4E",
       },
+      container: {
+        padding: "10px",
+      },
     },
   },
   plugins: [],

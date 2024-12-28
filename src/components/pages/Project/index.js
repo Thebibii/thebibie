@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Badge from "../../fragments/badge";
+
 export default function Project({ data }) {
+  console.log(data);
+
   return (
     <section id="project" className="flex flex-col items-center w-full py-12">
       <h2 className="text-4xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
@@ -33,12 +37,16 @@ export default function Project({ data }) {
               alt="projects vickyadriia"
               className="self-center order-1 mb-6 rounded-lg lg:mb-0 lg:order-2 "
             />
-            <div className="flex flex-col gap-2.5 order-3 items-start">
-              <div className="flex items-center gap-1">
-                <p className="text-xs md:text-base text-foreground">
-                  App Platform •
-                </p>
-                <div className="flex items-center gap-2 md:gap-4"></div>
+            <div className="order-3 w-full ">
+              <div className="flex gap-x-8">
+                <h1 className="text-xs md:text-sm text-foreground whitespace-nowrap">
+                  App Platform
+                </h1>
+                <div className="flex flex-wrap self-end gap-1">
+                  {data.tech?.map((tech) => (
+                    <Badge>Next</Badge>
+                  ))}
+                </div>
               </div>
             </div>
           </Link>

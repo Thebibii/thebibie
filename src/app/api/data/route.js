@@ -49,16 +49,16 @@ export async function GET() {
           img: "/img/project/masalahgw.png",
           description:
             "An informal forum designed as a place for you all to hang out. Here, informal language creates a relaxed and comfortable atmosphere, allowing us and our users to feel freer to share, discuss and socialize.",
-          build: "",
+          tech: ["React, Laravel, Supabase, Tailwind CSS"],
         },
         {
           id: 2,
           title: "Bell",
-          link: "null",
+          link: "#",
           img: "/img/project/masalahgw.png",
           description:
             "Enjoy the convenience of managing time with the automatic bell application. Set bell schedules for schools, factories or offices easily and quickly. Make sure the bell rings on time, without hassle and efficiently.",
-          build: "",
+          tech: ["React Native, NativeWind"],
         },
       ],
     },

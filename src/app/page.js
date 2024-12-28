@@ -16,6 +16,7 @@ async function getData() {
 
 export default async function App() {
   const data = await getData();
+
   return (
     <Fragment>
       <Home data={data.home} />
@@ -25,6 +26,7 @@ export default async function App() {
       <div className="bg-[#233831] w-screen lg:px-28 md:px-16 p-6 xl:px-52">
         <Skill />
         <Footer />
+        {/* <Spotify /> */}
       </div>
     </Fragment>
   );
