@@ -30,12 +30,6 @@ export default function Navbar() {
         >
           Project
         </Link>
-        <Link
-          href="#contact"
-          className="text-foreground font-medium cursor-pointer hover:text-[#2d6e77]"
-        >
-          Contact
-        </Link>
       </ul>
     </nav>
   );
