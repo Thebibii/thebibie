@@ -4,8 +4,6 @@ import Link from "next/link";
 import Badge from "../../fragments/badge";
 
 export default function Project({ data }) {
-  console.log(data);
-
   return (
     <section id="project" className="flex flex-col items-center w-full py-12">
       <h2 className="text-4xl font-bold tracking-wide w-fit sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
@@ -43,8 +41,8 @@ export default function Project({ data }) {
                   App Platform
                 </h1>
                 <div className="flex flex-wrap self-end gap-1">
-                  {data.tech?.map((tech) => (
-                    <Badge>Next</Badge>
+                  {data.tech?.map((_, tech) => (
+                    <Badge key={_}>{tech}</Badge>
                   ))}
                 </div>
               </div>
