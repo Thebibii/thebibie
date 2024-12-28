@@ -41,7 +41,7 @@ export default function Project({ data }) {
                   App Platform
                 </h1>
                 <div className="flex flex-wrap self-end gap-1">
-                  {data.tech?.map((_, tech) => (
+                  {data.tech?.map((tech, _) => (
                     <Badge key={_}>{tech}</Badge>
                   ))}
                 </div>
