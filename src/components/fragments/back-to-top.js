@@ -1,3 +1,4 @@
+"use client";
 import { ArrowUpCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
