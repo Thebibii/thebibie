@@ -1,3 +1,4 @@
+import { GlobeIcon } from "lucide-react";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -50,6 +51,13 @@ export async function GET() {
           description:
             "An informal forum designed as a place for you all to hang out. Here, informal language creates a relaxed and comfortable atmosphere, allowing us and our users to feel freer to share, discuss and socialize.",
           tech: ["React", "Laravel", "Supabase", "Tailwind CSS"],
+          links: [
+            {
+              type: "Website",
+              href: "https://masalahgw.vercel.app",
+              icon: <GlobeIcon className="size-1" />,
+            },
+          ],
         },
         {
           id: 2,

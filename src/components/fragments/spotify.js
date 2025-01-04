@@ -3,7 +3,10 @@ import { FaSpotify } from "react-icons/fa";
 async function fetchData() {
   try {
     const data = await fetch(
-      "https://api.lanyard.rest/v1/users/754746907397718167"
+      "https://api.lanyard.rest/v1/users/754746907397718167",
+      {
+        cache: "no-cache",
+      }
     );
     if (!data.ok) throw new Error("Failed to fetch");
     return await data.json();

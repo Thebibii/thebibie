@@ -65,7 +65,7 @@ const Home = ({ data }) => {
         </motion.svg> */}
         <div className="flex flex-col items-center space-y-8">
           <div className="flex flex-col items-center space-y-1">
-            <h2 className="text-[39.5px] flex flex-col items-center font-extrabold leading-none md:tracking-wide text-primary font-glock lg:text-[80px] xl:text-8xl md:text-[58px]">
+            <h2 className="text-[39.5px] flex flex-col items-center font-extrabold leading-none md:tracking-wide text-primary-foreground font-glock lg:text-[80px] xl:text-8xl md:text-[58px]">
               <span>{data.name}</span>
               <span className="tracking-wide">{data.profesi}</span>
             </h2>

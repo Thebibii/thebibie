@@ -1,6 +1,8 @@
 "use client";
+import ShimmerButton from "@/components/ui/shimmer-button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About({ data }) {
   return (
@@ -8,7 +10,7 @@ export default function About({ data }) {
       <div className="grid grid-cols-1 place-items-center md:grid-cols-12 gap-y-16 lg:gap-y-0">
         <div className="flex flex-col order-2 w-full space-y-3 md:order-1 md:space-y-4 md:col-span-7">
           <div className="relative w-fit">
-            <h2 className="text-4xl font-bold tracking-wide sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary">
+            <h2 className="text-4xl font-bold tracking-wide sm:text-5xl lg:text-6xl xl:text-7xl font-glock text-primary-foreground">
               {data.title}
             </h2>
             <motion.svg
@@ -49,11 +51,18 @@ export default function About({ data }) {
               {data.paragrafTwo}
             </p>
           </div>
-          <div>
+          {/*  <div>
             <button className="px-4 text-xs sm:text-base sm:px-8 py-2 rounded-full transition-all shadow-lg shadow-black/30 ring-2 ring-white/70 bg-[#233D4D] text-white border-[#54f3d8] border-b-[3px] font-poppins font-medium hover:ring-0 hover:shadow-none hover:brightness-110">
               Download CV
             </button>
-          </div>
+          </div> */}
+          <Link href="/">
+            <ShimmerButton className="px-4 py-2 shadow-2xl w-fit font-poppins ring-1 ring-primary-foreground">
+              <span className="text-sm font-medium leading-none tracking-tight text-center whitespace-pre-wrap text-primary dark:from-white dark:to-slate-900/10 lg:text-sm">
+                Download CV
+              </span>
+            </ShimmerButton>
+          </Link>
         </div>
 
         <div className="order-1 w-full md:w-fit md:order-2 md:ml-auto md:col-span-5">
